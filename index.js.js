@@ -8,7 +8,7 @@ const Messenger = require("./models/session");
 const multer = require("multer");
 const path = require("path");
 const Order = require("./models/orders");
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.p6svwef.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
+const MONGODB_URI = `mongodb+srv://hoangsn:hoangsn27@cluster0.p6svwef.mongodb.net/e-commerce-website`;
 
 const app = express();
 app.use(cors());
