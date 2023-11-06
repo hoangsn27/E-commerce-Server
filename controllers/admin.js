@@ -124,10 +124,10 @@ exports.postAddProduct = async (req, res) => {
   if (!errors.isEmpty()) {
     return res.json({ message: errors.array()[0].msg, statusCode: 422 });
   }
-  const img1 = `http://localhost:5000/${images[0].path}`;
-  const img2 = `http://localhost:5000/${images[1].path}`;
-  const img3 = `http://localhost:5000/${images[2].path}`;
-  const img4 = `http://localhost:5000/${images[3].path}`;
+  const img1 = `https://e-commerce-server-pxyx.onrender.com/${images[0].path}`;
+  const img2 = `https://e-commerce-server-pxyx.onrender.com/${images[1].path}`;
+  const img3 = `https://e-commerce-server-pxyx.onrender.com/${images[2].path}`;
+  const img4 = `https://e-commerce-server-pxyx.onrender.com/${images[3].path}`;
 
   // add new product do database and response to admin
   const newProduct = new Product({
